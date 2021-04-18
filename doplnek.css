@@ -1,9 +1,4 @@
-/* Tooltip container */
-.mojetip {
-    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
-  }
-  
-  /* Tooltip text */
+/* Tooltip text */
   .mojetip .mojetiptext {
     visibility: hidden;
     width: fit-content;
