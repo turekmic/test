@@ -1,3 +1,6 @@
+.mojetip {
+    background-color: #FAEBD7
+  }
 /* Tooltip text */
   .mojetip .mojetiptext {
     visibility: hidden;
