@@ -1,4 +1,4 @@
-.mojetip {
+/*.mojetip {
     background-color: #FAEBD7;
     padding: 0;
     margin: 0;
@@ -22,3 +22,45 @@
   .mojetip:hover .mojetiptext {
     visibility: visible;
   }
+*/
+
+/* Hover tooltips */
+.mojetip {
+    position:relative;
+    cursor:help;
+}
+    .mojetip .mojetiptext {
+        position:absolute;
+        top:-10px; /* - top padding */
+        right:9999px;
+        width:200px;
+        margin-right:-220px; /* width + left/right padding */
+        padding:10px;
+        color:#fff;
+        background:#333;
+        -webkit-box-shadow:2px 2px 5px #aaa;
+           -moz-box-shadow:2px 2px 5px #aaa;
+                box-shadow:2px 2px 5px #aaa;
+        opacity:0;
+        -webkit-transition:opacity 250ms ease-out;
+           -moz-transition:opacity 250ms ease-out;
+            -ms-transition:opacity 250ms ease-out;
+             -o-transition:opacity 250ms ease-out;
+                transition:opacity 250ms ease-out;
+    }
+        /* <http://css-tricks.com/snippets/css/css-triangle/> */
+        .mojetip .mojetiptext:before {
+            content:' '; /* Must have content to display */
+            position:absolute;
+            top:50%;
+            left:-16px; /* 2 x border width */
+            width:0;
+            height:0;
+            margin-top:-8px; /* - border width */
+            border:8px solid transparent;
+            border-right-color:#333;
+        }
+        .mojetip:hover .mojetiptext {
+            right:-20px;
+            opacity:1;
+        }
