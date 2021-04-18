@@ -6,7 +6,7 @@
   /* Tooltip text */
   .mojetip .mojetiptext {
     visibility: hidden;
-    width: 120px;
+    width: 20px;
     background-color: black;
     color: #fff;
     text-align: center;
